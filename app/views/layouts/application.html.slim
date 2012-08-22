@@ -6,7 +6,8 @@ html
     = csrf_meta_tags
   body
     = render 'layouts/header'
-    section.page-wrapper role="main"
+    section.page-wrapper role="main" style="min-height:580px;"
+      = render 'layouts/dashboard'
       = yield
     
     = render 'layouts/footer'

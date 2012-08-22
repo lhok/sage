@@ -8,7 +8,9 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'slim'
 gem 'slim-rails'
-gem 'therubyracer'
+#gem 'therubyracer'
+gem "wice_grid", '3.2.0.pre1'
+gem 'will_paginate'
 
 
 # Gems used only for assets and not required

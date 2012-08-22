@@ -1,0 +1,27 @@
+<%= grid(@apps_grid) do |g|
+
+  g.column :name => "ID", :attribute => "id", :filter => false do |app|
+    app.id
+  end
+
+  g.column :name => "Name", :attribute => "name" do |app|
+    app.name
+  end
+
+  g.column :name => "Statu", :attribute => "statu" do |app|
+    app.statu
+  end
+
+  g.column :name => "Level", :attribute => "level" do |app|
+    app.level
+  end
+
+  g.column :name => "Desc", :attribute => "desc" do |app|
+    app.desc
+  end
+
+
+  g.column do |app|
+    link_to('Edit', edit_app_path(app))
+  end
+end -%>
